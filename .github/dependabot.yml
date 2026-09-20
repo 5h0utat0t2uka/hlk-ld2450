@@ -1,0 +1,44 @@
+version: 2
+
+updates:
+  # - package-ecosystem: "github-actions"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #     day: "sunday"
+  #     time: "04:00"
+  #     timezone: "Asia/Tokyo"
+  #   cooldown:
+  #     default-days: 7
+  #   groups:
+  #     github-actions:
+  #       patterns:
+  #         - "*"
+  #   labels:
+  #     - "dependencies"
+  #     - "github-actions"
+  #   commit-message:
+  #     prefix: "chore(actions)"
+  #   assignees:
+  #     - 5h0utat0t2uka
+
+  - package-ecosystem: "nix"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "04:00"
+      timezone: "Asia/Tokyo"
+    cooldown:
+      default-days: 7
+    groups:
+      nix-inputs:
+        patterns:
+          - "*"
+    labels:
+      - "dependencies"
+      - "nix"
+    commit-message:
+      prefix: "chore(nix)"
+    assignees:
+      - 5h0utat0t2uka
