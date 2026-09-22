@@ -1,0 +1,11 @@
+default_profile: cores3
+
+profiles:
+  cores3:
+    fqbn: m5stack:esp32:m5stack_cores3:PSRAM=enabled
+    platforms:
+      - platform: m5stack:esp32 (3.3.9)
+        platform_index_url: https://static-cdn.m5stack.com/resource/arduino/package_m5stack_index.json
+    libraries:
+      - M5Unified (0.2.23)
+      - M5GFX (0.2.30)
